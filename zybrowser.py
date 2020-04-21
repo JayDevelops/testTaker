@@ -1,6 +1,5 @@
 import time
 from selenium import webdriver
-from selenium.webdriver import ActionChains
 from selenium.webdriver.common.keys import Keys
 
 # TODO: Ask the user how much assignments they want through loop through
@@ -66,7 +65,6 @@ while(startingNum < untilLooped):
     nextSection.click()
 
     time.sleep(5)  # Wait for five seconds until the web page loads
-
     clickPoints(labels)  # Call the loop for the new web page
 
     startingNum += 1  # Increment the starting num
