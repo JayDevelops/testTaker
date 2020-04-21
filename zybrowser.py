@@ -7,20 +7,28 @@ from selenium.webdriver.common.keys import Keys
 untilLooped = input("Enter the amount of assignments you want to loop through: ")
 startingNum = 1
 
+
+# Line Spacer
+print("If the website tells you 'wrong username/password', restart the script again and input your right credentials")
+
+
+# TODO: Ask the user to enter the email and password credentials
+userEmail = raw_input('Please input your email: ')
+userPass = raw_input('Please input your password: ')
+
+
 # TODO: Initialize chromedriver and open the zybooks url
 browser = webdriver.Chrome('/Users/jesusperez/Downloads/chromedriver')
 browser.get('https://learn.zybooks.com/signin')
 browser.implicitly_wait(20)  # Gives an implicit wait for the functions to run 25 seconds apart
 
-actions = ActionChains(browser)
-
 
 # TODO: Click the Sign In field, enter sign in credentials
 emailField = browser.find_element_by_css_selector('input[type=email]')
-emailField.send_keys('jpereza6@calstatela.edu')
+emailField.send_keys(userEmail)
 
 passField = browser.find_element_by_css_selector('input[type=password]')
-passField.send_keys('Jayp01242001')
+passField.send_keys(userPass)
 passField.send_keys(Keys.ENTER)
 
 
