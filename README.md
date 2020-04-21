@@ -1,5 +1,5 @@
 # Test Taker
-This automated script will click on multiple choice tests you don't want to take, but it only works if you don't get accounted for each test question you don't get wrong. It'll save a ton of time.
+This automated script will click on multiple choice tests you don't want to take on zybooks.com, but it only works if you don't get accounted for each test question you don't get wrong. It'll save a ton of time to do meaningful things in life. It will iterate through each multiple choice box and click on them for each page of assignments you have to do.
 
 
 # Pre-Requisites
@@ -22,6 +22,7 @@ for Python and this script cannot be possible without. Here's a guide to install
 it on your machine: https://selenium-python.readthedocs.io/installation.html
 
 # How To Use
+Make a git clone onto your machine, or install it as a zip and place it in a respectable folder of your choice.
 Run the script on a terminal, of course you need to CD into the folder first,
 by entering "python zybrowser.py" without the quotation marks.
 Follow the on screen commands from your terminal and if you run into bugs,
